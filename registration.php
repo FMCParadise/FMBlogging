@@ -49,7 +49,7 @@ if (!empty($_POST['lastname']) && !empty($_POST['firstname']) && !empty($_POST['
 		
 		// Créer une session pour l'utilisateur
 		session_start();
-		$_SESSION['email'] = $this->email; // utiliser l'e-mail comme identifiant
+		$_SESSION['email'] = $email; // utiliser l'e-mail comme identifiant
 
 		// Rediriger vers home.php
 		header('Location: home.php');

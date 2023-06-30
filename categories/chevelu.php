@@ -2,7 +2,7 @@
 // Ce fichier est le tableau de bord qui affiche tous les articles disponibles.
 
 // On se connecte à la base de données
-require 'assets/includes/connection.php';
+require '../assets/includes/connection.php';
 
 // On démarre la session
 session_start();
@@ -77,22 +77,22 @@ if (isset($_SESSION['email'])) {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link active" aria-current="page" href="../home.php">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Articles</a>
+                            <a class="nav-link" href="../articles.php">Articles</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Catégories
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Chevelu</a></li>
-                                <li><a class="dropdown-item" href="#">Non-Chevelu</a></li>
+                                <li><a class="dropdown-item" href="chevelu.php">Chevelu</a></li>
+                                <li><a class="dropdown-item" href="non-chevelu.php">Non-Chevelu</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Trans-Chevelu</a></li>
+                                <li><a class="dropdown-item" href="trans-chevelu.php">Trans-Chevelu</a></li>
                                 
                             </ul>
                         </li>
